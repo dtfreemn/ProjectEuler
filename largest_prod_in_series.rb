@@ -43,9 +43,8 @@ def multiply_digits_of_number_for_product(array)
 	large_prod = 0
 	array.each do |num|
 		temp_arr = num.to_s.split('').map(&:to_i)
-		i = 0
 		j = 1
-		product = temp_arr[i]
+		product = temp_arr[0]
 		while j < temp_arr.length
 			product *= temp_arr[j]
 			j += 1
